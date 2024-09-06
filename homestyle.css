@@ -1,34 +1,211 @@
 
 body{
     background-color: #bdb1d9;
-}
-
-h1, h2, p{
-    color: #08192E;
+    color: #2e358d;
     text-align: center;
     font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
 }
 
-img{
-    width: 150px;
+.main-container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction:row;
+}
+
+.namelogo {
+    display: flex;
+    width: 100%;
+    max-width:500px;
+    border:1px solid #fff; padding:5px 10px; border-radius:100px;
+    margin-bottom:-50px;
+}
+
+.namelogo h1 {padding-left:10px;}
+
+
+h1 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 40px;
+}
+
+h2.tagline {
+    font-size: 5em;
+    line-height: 1em;
+}
+
+h3 {
+    font-size: 18px;
+}
+
+p {font-size: 15px;    line-height:1.5em;}
+
+.content-about p {
+    font-size: 18px;
+
+}
+
+.left-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 35%;
+    position: fixed;
+    height: calc(100vh - 80px); 
+    overflow: hidden;
+    /*top: 125px;*/
+    left: 0;
+
+}
+
+.right-container {
+    margin-left: 50%;
+    position: relative;
+    width: calc(100% - 50% - 70px);
+    height: calc(100vh - 125px); 
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.right-container::-webkit-scrollbar {
+    display: none;
+}
+
+.body-container {  display:block;}
+
+.avatar {
+    height: 50px;
+    width: auto;
+}
+
+.content-header h2:first-of-type {
+    padding-top: 80px;
+}
+
+
+.exlinks {padding-top:5em;}
+
+
+/*Right Content Styles*/
+
+.exp, .proj-info{padding-bottom:25px;}
+
+.proj-title, .exp-title {
+    font-size:20px;
+    font-weight:700;
+    margin-bottom:auto;
+  }
+
+  .date-tool-con {
+    display:flex;
+    max-width:500px;
+    width:95%;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:-5px;
+    margin-bottom:-10px;
+}
+
+.content-experience .date-tool-con {
+    max-width: 425px;
+}
+
+.date-tool-con p {font-size:13px;}
+
+.dash-divider {
+    height:1px;
+    background:rgba(0, 0, 0, 0.5);
+    width:120px;
+}
+
+
+/*FOOTER STYLES*/
+footer {display:flex; align-items:center;padding-top:50px;}
+
+.logo{
+    max-width: 40px;
+    width: 100%;
     height: auto;
 }
 
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+footer p {
+    padding-left:5px;
 }
 
-.center-body
+th, td {
+    border-bottom: 1px solid white;
+    text-align: start;
+    text-justify: auto;
+    vertical-align: top;
+    padding: 13px;
+}
+
+p.proj-name{
+    font-weight: 700;
+    width: 240px;
+}
+
+img.gh-logo {
+    width: 20px;
+    height: auto;
+}
+
+.proj-date, p.built-with  {
+    font-size: 12px;
+    font-weight: 500;
+}
+
+th {
+    font-size: 30px;
+}
+
+.nav a{
+    text-decoration: none;
+    color: #2e358d;
+}
+
+/*SHOW HIDE*/
+
+.show {display:none;}
+
+/*RESPONSIVE DESIGN STYLES*/
+
+@media (max-width: 1000px)
 {
-    display: inline-block;
+    .main-container {
+        padding-top:50px;
+        display: flex;
+        flex-direction:column;
+        width:100%;
+        max-width:900px;
+        margin:0 auto;
+    }
+
+    h2.tagline {font-size:2.8em;}
+    .name {font-size:15px;}
+    .avatar {
+        height: 50px;
+        width: auto;
+    }
+
+
+    .namelogo {
+        display: flex;
+        width: 100%;
+        max-width:250px;
+        margin-bottom:-20px;
+    }
+
+
+    .show {display:block;}
+    .hide {display:none;}
+
 }
 
-body, html{
-    height: 100%;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}

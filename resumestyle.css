@@ -1,0 +1,52 @@
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+h1, h2, h3 {
+    text-align: left;
+}
+
+.headersnav {
+    margin-top: 100px;
+    width: 100%;
+}
+
+.content p{
+    text-align: left;
+}
+
+
+.content-header {
+    font-weight: bold;
+    text-align: left;
+}
+
+.content {
+    margin-top: 200px;
+}
+
+.content-about {
+    margin-bottom: 100px;
+}
+
+.exp{
+    display: inline-block;
+}
+
+.exp-duration, .exp-title, .exp-company {
+    font-weight: bold;
+}
+
+.nav {
+    margin-top: 100px;
+}
+
+.exlinks p, .nav p
+{
+}
+
+.exlinks {
+    text-decoration: underline;
+}
